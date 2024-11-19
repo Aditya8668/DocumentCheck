@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Content Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>File Content Comparison Tool</h1>
+
+    <div class="upload-section">
+      <div>
+        <label for="file1">Upload First File (PDF/TXT):</label>
+        <input type="file" id="file1" accept=".pdf, .txt">
+      </div>
+      <div>
+        <label for="file2">Upload Second File (PDF/TXT):</label>
+        <input type="file" id="file2" accept=".pdf, .txt">
+      </div>
+    </div>
+
+    <button id="compareBtn">Compare Files</button>
+
+    <div class="result-section">
+      <h2>Comparison Result:</h2>
+      <p id="resultOutput"></p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
